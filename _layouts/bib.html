@@ -55,7 +55,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            
+
             {%- if forloop.length > 1 -%}
               {%- if forloop.first == false -%},&nbsp;{%- endif -%}
               {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
@@ -71,7 +71,7 @@
             {%- endif -%}
           {%- endfor -%}
           {%- assign more_authors = author_array_size | minus: author_array_limit -%}
-          
+
           {%- assign more_authors_hide = more_authors | append: " more author" -%}
           {%- if more_authors > 0 -%}
             {%- if more_authors > 1 -%}
@@ -124,7 +124,7 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
-        
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
@@ -145,7 +145,14 @@
             {%- else -%}
             <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
             {%- endif %}
-          {%- endif %}
+            {%- endif %}
+          {%- if entry.report %}
+            {% if entry.report contains '://' -%}
+            <a href="{{ entry.report }}" class="btn btn-sm z-depth-0" role="button">Full Report</a>
+            {%- else -%}
+            <a href="{{ entry.report | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Full Report</a>
+            {%- endif %}
+            {%- endif %}
           {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
             <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
@@ -172,7 +179,14 @@
             {%- else -%}
             <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
             {%- endif %}
-          {%- endif %}
+            {%- endif %}
+         {%- if entry.video %}
+            {% if entry.video contains '://' -%}
+            <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+            {%- else -%}
+            <a href="{{ entry.video | prepend: '/assets/mp4/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+            {%- endif %}
+            {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
