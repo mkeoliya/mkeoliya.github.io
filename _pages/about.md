@@ -6,13 +6,11 @@ subtitle:
 
 profile:
   align: right
-  image: me.jpg
-  image_circular: false # crops the image to make it circular
   address: >
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: false  # includes social icons at fhe bottom of the page
 ---
 
 Hi! I'm a final-year undergraduate at the National University of Singapore, where I study computer science and [a bunch of other things](https://usp.nus.edu.sg).
