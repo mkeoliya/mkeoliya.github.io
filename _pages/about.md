@@ -15,7 +15,7 @@ social: false  # includes social icons at fhe bottom of the page
 
 Hi! I'm a final-year undergraduate at the National University of Singapore, where I study computer science and [a bunch of other things](https://usp.nus.edu.sg).
 
-I love wondering about **programming languages** (especially [ones](https://ocaml.org) [with](https://haskell.org) [λs](https://docs.sourceacademy.org/)), so I work on PL research at the [VERSE Lab](verse-lab.github.io) on formal verification and compilers.  I'm currently
+I love wondering about **programming languages** (especially [ones](https://ocaml.org) [with](https://haskell.org) [λs](https://docs.sourceacademy.org/)), so I work on PL research at the [VERSE Lab](https://verse-lab.github.io) on formal verification and compilers.  I'm currently
 **looking for opportunities to continue my research** at grad school or industry.
 
 I want to make PL and hacker culture more fun for beginners. I help out at [NUS Hackers](https://nushackers.org) to make that happen.
