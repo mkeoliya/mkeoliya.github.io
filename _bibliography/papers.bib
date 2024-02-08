@@ -5,7 +5,27 @@
 @string{aps = {American Physical Society,}}
 @string{ieee = {IEEE,}}
 
-@article{10.1145/3591221,
+@article{discret2024,
+author = {Wu, Yinjun and Keoliya, Mayank and Naik, Mayur, and Parikh, Ravi, and Long, Qi},
+title = {Synthesizing Faithful Explanations for Treatment Effect Estimation (under submission)},
+year = {2024},
+issue_date = {April 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {PLDI},
+url = {https://doi.org/10.1145/3591221},
+doi = {10.1145/3591221},
+abstract = {Designing faithful yet accurate AI models is challenging, particularly in the field of individual treatment effect estimation (ITE). ITE prediction models deployed in critical settings such as healthcare should ideally be (i) accurate, and (ii) provide faithful explanations. However, current solutions are inadequate: state-of-the-art black-box models do not supply explanations, post-hoc explainers for black-box models lack faithfulness guarantees, and self-interpretable models greatly compromise accuracy. To address these issues, we propose DISCRET, a self-interpretable ITE framework that synthesizes faithful, rule-based explanations for each sample. A key insight behind DISCRET is that explanations can serve dually as database queries to identify similar subgroups of samples. We provide a novel RL algorithm to efficiently synthesize these explanations from a large search space. We evaluate DISCRET on diverse tasks involving tabular, image, and text data. DISCRET outperforms the best self-interpretable models and has accuracy comparable to the best black-box models while providing faithful explanations.
+},
+articleno = {107},
+numpages = {25},
+keywords = {invariant inference, separation logic, proof repair, mechanised proofs},
+preview={discret.jpg},
+selected={true},
+}
+
+@article{pldi2023,
 author = {Gopinathan, Kiran and Keoliya, Mayank and Sergey, Ilya},
 title = {Mostly Automated Proof Repair for Verified Libraries},
 year = {2023},
@@ -17,17 +37,25 @@ number = {PLDI},
 url = {https://doi.org/10.1145/3591221},
 doi = {10.1145/3591221},
 abstract = {The cost of maintaining formally specified and verified software is widely considered prohibitively high due to the need to constantly keep code and the proofs of its correctness in sync—the problem known as proof repair. One of the main challenges in automated proof repair for evolving code is to infer invariants for a new version of a once verified program that are strong enough to establish its full functional correctness. In this work, we present the first proof repair methodology for higher-order imperative functions, whose initial versions were verified in the Coq proof assistant and whose specifications remained unchanged. Our proof repair procedure is based on the combination of dynamic program alignment, enumerative invariant synthesis, and a novel technique for efficiently pruning the space of invariant candidates, dubbed proof-driven testing, enabled by the constructive nature of Coq’s proof certificates. We have implemented our approach in a mostly-automated proof repair tool called Sisyphus. Given an OCaml function verified in Coq and its unverified new version, Sisyphus produces a Coq proof for the new version, discharging most of the new proof goals automatically and suggesting high-confidence obligations for the programmer to prove for the cases when automation fails. We have evaluated Sisyphus on 10 OCaml programs taken from popular libraries, that manipulate arrays and mutable data structures, considering their verified original and unverified evolved versions. Sisyphus has managed to repair proofs for all those functions, suggesting correct invariants and generating a small number of easy-to-prove residual obligations.},
-journal = {PLDI},
+journal = {Proc. ACM Program. Languages (PLDI), },
 month = {jun},
 articleno = {107},
 numpages = {25},
-keywords = {invariant inference, separation logic, proof repair, mechanised proofs}
+keywords = {invariant inference, separation logic, proof repair, mechanised proofs},
+preview={sisyphus-logo.png},
+pdf={pldi_2023.pdf},
+slides={pldi_2023_slides.pdf},
+video={https://www.youtube.com/watch?v=FXkSMC-kUE8&t=77s},
+website={https://verse-lab.github.io/sisyphus/},
+code={https://github.com/verse-lab/sisyphus},
+award={Distinguished Paper Award},
+selected={true},
 }
 
 @article{ISPASS_Poster,
   abbr={Poster},
   title={Simulating Noisy Channels in DNA Storage},
-  author={Keoliya, M. and Sharma, P. and Jevdjic, D.},
+  author={Keoliya, Mayank and Sharma, Puru and Jevdjic, Djordje},
   abstract={Compared to conventional storage mediums, DNA-based data storage offers benefits such as durability, high density and low energy consumption. With increased demand for DNA data storage, it has become important to quickly evaluate proposed approaches. However, experiments that involve reading and writing synthetic DNA are costly and time-consuming, thus requiring cheap and fast simulation prior to experimentation. DNA sequencing technologies such as Nanopore and Illumina have highly characteristic error profiles, and simulating them is challenging. We propose a DNA simulator for Nanopore data that improves on existing simulators by incorporating key parameters; our simulator better converges to error profiles of real data on most parameters.
 
 We show that the spatial distribution of errors within a strand is a key determinant of trace reconstruction accuracy; which is a factor that had not been considered by existing simulators.},
@@ -36,9 +64,12 @@ We show that the spatial distribution of errors within a strand is a key determi
   month={May},
   publisher=iee,
   preview={dna.jpeg},
-  pdf={ispass_poster.pdf},
-  slides={ispass_slides.pdf},
-  report={report.pdf},
+  pdf={ispass_2022_poster.pdf},
+  slides={ispass_2022_slides.pdf},
+  report={ispass_2022_report.pdf},
   video={ispass_video.mp4},
   selected={true}
 }
+
+
+
