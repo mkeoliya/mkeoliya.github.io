@@ -16,7 +16,7 @@ social: false  # includes social icons at fhe bottom of the page
 # <!-- hacker culture, and used to help out at [NUS Hackers](https://nushackers.org) to make that happen. ->
 ---
 
-Hi! I'm a first-year PhD student at the University of Pennsylvania. I work with [Mayur Naik](https://www.cis.upenn.edu/~mhnaik/) and [Rajeev Alur](https://www.cis.upenn.edu/~alur/) on neurosymbolic AI in clinical and genomic settings. I'm currently looking for **opportunities to work on trustworthy AI for healthcare in summer 2024** -- hit me up if you're working on something similar!
+Hi! I'm Mayank, a first-year PhD student at the University of Pennsylvania. I work with [Mayur Naik](https://www.cis.upenn.edu/~mhnaik/) and [Rajeev Alur](https://www.cis.upenn.edu/~alur/) on neurosymbolic AI in clinical and genomic settings. I'm currently looking for **opportunities to work on trustworthy AI for healthcare in summer 2024** -- hit me up if you're working on something similar!
 
 <h2> past </h2>
 Before [sailing to Philadelphia](https://open.spotify.com/track/5dFbGFPR2GkgIPvfnAo3R3?si=b8d8fe1447964f15), I read my bachelor's at the National University of Singapore, where I studied computer science and [a bunch of other things](https://usp.nus.edu.sg). I worked on research in [formal verification](https://ilyasergey.net/assets/pdf/papers/sisyphus-pldi23.pdf) and Rust with Prof. Ilya Sergey at the [VERSE Lab](https://verse-lab.github.io). I also spent a summer at [CVWO](https://www.comp.nus.edu.sg/~vwo/) to build better systems for non-profits.
